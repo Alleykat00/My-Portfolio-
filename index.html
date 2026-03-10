@@ -1,38 +1,53 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Rancifer | Cybersecurity & Systems Professional</title>
-
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: auto; padding: 20px; }
-        header { border-bottom: 2px solid #0062ff; padding-bottom: 10px; margin-bottom: 20px; }
-        h1 { margin: 0; color: #0062ff; }
-        .contact-info { font-style: italic; color: #666; }
-        section { margin-bottom: 30px; }
-        h2 { border-left: 5px solid #0062ff; padding-left: 10px; background: #f4f4f4; }
-        .job-title { font-weight: bold; color: #222; }
-        .date { float: right; color: #777; }
-        ul { padding-left: 20px; }
-        .cert-badge { background: #e1efff; border: 1px solid #0062ff; padding: 5px 10px; border-radius: 4px; display: inline-block; font-weight: bold; }
+        :root { --primary: #0056b3; --secondary: #6c757d; --bg: #f8f9fa; --text: #333; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 40px 20px; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        header { border-bottom: 3px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; text-align: center; }
+        h1 { margin: 0; color: var(--primary); font-size: 2.5rem; text-transform: uppercase; }
+        .contact-info { font-weight: bold; margin: 10px 0; color: var(--secondary); }
+        h2 { border-bottom: 1px solid #ddd; padding-bottom: 5px; color: var(--primary); text-transform: uppercase; font-size: 1.3rem; margin-top: 40px; }
+        .job-entry { margin-bottom: 30px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 5px; }
+        .job-title { font-weight: bold; font-size: 1.15rem; color: #000; }
+        .company { color: var(--primary); font-weight: bold; }
+        .date-location { font-style: italic; color: #555; font-size: 0.95rem; }
+        ul { padding-left: 20px; margin-top: 10px; }
+        li { margin-bottom: 8px; }
+        .cert-box { background: #e7f3ff; border: 1px solid #b3d7ff; padding: 15px; border-radius: 5px; margin-top: 10px; }
+        .edu-item { margin-bottom: 15px; }
+        footer { text-align: center; margin-top: 50px; font-size: 0.85rem; color: #888; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
-
 <body>
 
 <div class="container">
     <header>
         <h1>ALEX RANCIFER</h1>
-        <p class="contact-info">System Service Representative @ IBM | Systems Specialist</p>
+        <p class="contact-info">System Service Representative @ IBM | Cybersecurity Specialist</p>
         <div class="links">
             <a href="mailto:Akrancifer@gmail.com">Contact Me</a> | 
             <a href="https://www.linkedin.com/in/alex-rancifer0991/">LinkedIn</a> | 
             <a href="https://github.com/Alleykat00">GitHub Portfolio</a>
         </div>
     </header>
+
+    <section id="summary">
+        <h2>Professional Summary</h2>
+        <p>
+            Highly technical System Administrator and CompTIA Security+ certified professional with over 7 years of 
+            experience managing mission-critical enterprise infrastructure. Proven track record of maintaining 99.9% 
+            uptime for high-availability environments and directing large-scale deployments across 26+ sites for 
+            5,000+ users. Expert in Windows Server, Active Directory, and multi-vendor hardware maintenance and repair ranging 
+            from IBM servers to Apple-certified repairs. Dedicated to delivering disciplined technical 
+            troubleshooting and systems optimization.
+        </p>
+    </section>
 
     <section id="experience">
         <h2>Professional Experience</h2>
@@ -44,8 +59,8 @@
             </div>
             <div class="company">International Business Machines (IBM)</div>
             <ul>
-                <li>Provide on-site and remote support for IBM hardware/software and multi-vendor solutions (Lexmark, Lenovo, Dell, HP, Sun Micro, Pure Storage, NetApp, and Cisco).</li>
-                <li>Maintain personnel records and update internal databases to document IBM and multi-vendor enterprise systems including servers, storage, and networking hardware.</li>
+                <li>Provide on-site and remote support for IBM hardware and software platforms and multi-vendor IT solutions including Lexmark, Lenovo, Dell, HP, Sun Micro, Pure Storage, NetApp, and Cisco.</li>
+                <li>Maintain personnel records and update internal databases to support documentation for enterprise systems (servers, storage, and networking hardware).</li>
                 <li>Provide emergency after-hours services for "hard down" emergencies to ensure rapid recovery.</li>
                 <li>Repair all Apple products (MacBook, Mac, iPhone, iPad) as a certified Apple technician.</li>
                 <li>Manage on-site IBM vendor installation projects as a Project Management Technician.</li>
@@ -59,13 +74,14 @@
             </div>
             <div class="company">Ricoh USA</div>
             <ul>
-                <li>Provisioned and maintained Windows Server environments, ensuring OS stability, security patching, and high availability.</li>
-                <li>Administered Active Directory (AD) to manage user accounts and implemented GPOs to enforce print security and system configurations.</li>
-                <li>Deployed enterprise print management software, overseeing the full lifecycle from procurement to database configuration.</li>
-                <li>Maintained a Master List of Devices using asset management tools, delivering technical reporting and SLA compliance audits.</li>
-                <li>Ensured 99.9% uptime for critical infrastructure by proactively monitoring performance metrics.</li>
-                <li>Served as a Tier 3 Escalation Point for complex Windows OS and software integration issues.</li>
-                <li>Directed large-scale deployments across 26+ sites for 5,000+ users and facilitated technical training programs and SOP development.</li>
+                <li>Provisioned and maintained Windows Server environments, ensuring OS stability, security patching, and high availability for enterprise applications.</li>
+                <li>Administered Active Directory (AD) to manage user accounts, group memberships, and permissions, implementing robust GPOs to enforce print security and system configurations.</li>
+                <li>Deployed enterprise print management software, overseeing the full lifecycle from procurement and server installation to database configuration.</li>
+                <li>Managed database operations, performing routine maintenance and optimization to support application reliability and data integrity.</li>
+                <li>Maintained a Master List of Devices using advanced asset management tools, delivering high-level technical reporting and SLA compliance audits.</li>
+                <li>Ensured 99.9% uptime for critical fleet infrastructure by proactively monitoring performance metrics and resolving bottlenecks.</li>
+                <li>Served as a Tier 3 Escalation Point, resolving complex Windows OS and software integration issues.</li>
+                <li>Directed large-scale deployments across 26+ sites and facilitated technical training programs, translating complex workflows into digestible SOPs.</li>
             </ul>
         </div>
 
@@ -76,23 +92,10 @@
             </div>
             <div class="company">Ricoh USA</div>
             <ul>
-                <li>Provided advanced troubleshooting, repair, and maintenance for commercial/production copiers and network infrastructure.</li>
-                <li>Managed solution deployment of new workstations and copier fleets for local and enterprise companies.</li>
-                <li>Configured and deployed corporate applications via EMM/UEM consoles to streamline management.</li>
-                <li>Configured and tested specialized hardware including scrub locker systems, Amazon locker units, and robotic equipment.</li>
-            </ul>
-        </div>
-
-        <div class="job-entry">
-            <div class="job-header">
-                <span class="job-title">Aerospace Maintenance Crew Chief</span>
-                <span class="date-location">03/2013 - 03/2018</span>
-            </div>
-            <div class="company">United States Air Force</div>
-            <ul>
-                <li>Maintained and repaired aircraft systems and components, ensuring 100% mission readiness.</li>
-                <li>Conducted critical pre-flight inspections and troubleshooting to resolve maintenance issues rapidly.</li>
-                <li>Managed detailed aircraft maintenance records in strict compliance with Air Force regulations.</li>
+                <li>Provided advanced troubleshooting, repair, and maintenance services for Ricoh commercial and production copiers and network infrastructure.</li>
+                <li>Managed solution deployment of new workstations, copier fleets, and printing solutions for enterprise companies.</li>
+                <li>Configured and deployed corporate applications and content through the EMM/UEM console, streamlining management processes.</li>
+                <li>Configured and tested specialized hardware including surgical scrub locker systems, Amazon locker units, and robotic equipment.</li>
             </ul>
         </div>
     </section>
@@ -112,12 +115,12 @@
 
         <div class="cert-box">
             <strong>CompTIA Security+ Certified</strong><br>
-            ID: 001022084632 | Valid through 02/2027
+            ID: 001022084632 | Valid: 02/2024 – 02/2027
         </div>
     </section>
 
     <footer>
-        <p>&copy; Alex Rancifer | System Administrator & Cybersecurity Professional</p>
+        <p>&copy; 2026 Alex Rancifer | Systems & Cybersecurity Specialist</p>
     </footer>
 </div>
 
